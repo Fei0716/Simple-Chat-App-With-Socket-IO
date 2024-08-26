@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Testing Socket IO Real Time Communication</h1>
+    <section aria-label="Chat Section" id="section-chat">
+      <div id="online-users">
+         <h2>List of Online Users</h2>
+      </div>
+      <div id="chat-wrapper">
+        <output id="chat-output">
+  
+        </output>
+        <div id="chat-input">
+          <div>
+            <input type="text" name="input" id="input">
+            <button id="btn-send-all">Send To All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Include Socket.IO client library -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/chat.js" type="module"></script>
+  </body>
+</html>
