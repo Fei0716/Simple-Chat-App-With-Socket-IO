@@ -28,6 +28,10 @@ h1{
     padding: 1rem;
   }
 }
+.current-user, .chat-current-user{
+  background-color: darkblue!important;
+  color: white;
+}
 #chat-wrapper{
   width: 500px;
   margin: 0 auto;
@@ -41,9 +45,21 @@ h1{
     border: 2px solid black;
     overflow-y: auto;
 
-    div{
-      padding: 2rem;
+    div.chat{
+      padding: 1rem;
       background-color: lightgrey;
+      margin-bottom: 1rem;
+      width: 50%;
+      margin-right: auto;
+    }
+    div.chat-current-user{
+      margin-left: auto;
+      margin-right: 0;
+    }
+    div.notification{
+      padding: 1rem;
+      background-color: #293d4f;
+      color: white;
       margin-bottom: 1rem;
     }
   }
@@ -60,5 +76,18 @@ h1{
       width: 90%;
       height: 30px;
     }
+    button{
+      width: 10%;
+    }
   }
+}
+.selected{
+  background-color: #32326d!important;
+  color: white;
+}
+.text-end{
+  text-align: end;
+}
+.mb-1{
+  margin-bottom: .5rem;
 }

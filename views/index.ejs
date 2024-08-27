@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Testing Socket IO Real Time Communication</h1>
+    <h1>Socket IO Real Time Communication</h1>
     <section aria-label="Chat Section" id="section-chat">
       <div id="online-users">
          <h2>List of Online Users</h2>
@@ -15,15 +15,19 @@
   
         </output>
         <div id="chat-input">
-          <div>
+          <div class="mb-1">
             <input type="text" name="input" id="input">
-            <button id="btn-send-all">Send To All</button>
+            <button id="btn-send">Send</button>
+          </div>
+
+          <div>
+            <input type="text" name="room" id="room">
+            <button id="btn-join">Join</button>
           </div>
         </div>
       </div>
     </section>
     <!-- Include Socket.IO client library -->
-
     <script src="/socket.io/socket.io.js"></script>
     <script src="/javascripts/chat.js" type="module"></script>
   </body>
